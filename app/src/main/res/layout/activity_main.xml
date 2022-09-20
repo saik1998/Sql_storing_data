@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/student_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Student name"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/student_mail"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Student Mail"
+        android:layout_margin="10dp"/>
+
+    <EditText
+        android:id="@+id/student_rollno"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Student Rollno"
+        android:layout_margin="10dp"/>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/Btn_Create"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="insert"
+                android:text="Create"
+                android:layout_margin="4dp"/>
+
+            <Button
+                android:id="@+id/Btn_Read"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Read"
+                android:text="Read"
+                android:layout_margin="4dp"/>
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_margin="20dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/Btn_Update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Update"
+            android:text="Update"
+            android:layout_margin="4dp"/>
+
+        <Button
+            android:id="@+id/Btn_Delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="Delete"
+            android:text="Delete"
+            android:layout_margin="4dp"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:visibility="gone"
+        android:singleLine="true"
+        android:id="@+id/set_mail"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:id="@+id/SQlList"/>
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
